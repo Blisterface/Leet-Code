@@ -47,7 +47,7 @@ public:
         vector<pair<int,int>> pairs;
         for(int v = 0;v< int(nums.size());v++)
         {
-          pair<int,int> temp(make_pair(nums[v],v));
+          pair<int,int> temp(nums[v],v);
           pairs.push_back(temp);
         }
 	      sort(pairs.begin(),pairs.end());
@@ -66,7 +66,6 @@ public:
         }
        return result;
       }
-
 };
 int main()
 {
