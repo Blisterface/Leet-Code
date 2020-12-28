@@ -62,7 +62,7 @@ public:
           else if((pairs[i].first+pairs[j].first)>target)
             j--;
           else
-            i++;      
+            i++;
         }
        return result;
       }
