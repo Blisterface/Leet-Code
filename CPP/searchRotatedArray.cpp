@@ -12,7 +12,7 @@ int search(std::vector<T> data,T key)
         if (data[mid]==key)
             return mid;
         
-        else if(data[mid] < data[end])
+        else if(data[mid] <= data[end])
         {
             if(key <= data[end] && key > data[mid])
                 start = mid+1;
